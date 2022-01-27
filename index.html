@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Lorem Ipsum</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </p>
+    <p>
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </p>
+    <ul>
+      <li>Mjölk</li>
+      <li>Ägg</li>
+      <li>Mjöl</li>
+    </ul>
+    <ol>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ol>
+    <h2>Ipsum lorem</h2>
+    <img src="/img/20220122_150357_1.jpg" alt="" />
+    <br />
+    <a href="http://www.google.com">Länk till Google</a>
+    <a href="Http://www.google.com" target="_blank">Länk till Google</a>
+    <ul>
+      <li>Konst</li>
+      <li>Sport
+        <ol>
+          <li>Fotboll</li>
+          <li>Ishockey</li>
+          <li>Discgolf</li>
+        </ol>
+      </li>
+      <li>Djur</li>
+      <li>Fordon
+      <ol>
+        <li>Motorfordon
+        <ol>
+          <li>Bilar</li>
+          <li>Motorcyklar</li>
+        </ol>
+        </li>
+      </ol>
+      </li>
+      <li>Filmer</li>
+      <li>Böcker</li>
+    </ul>
+    <form method="post"  action="https://formshow.systementor.se">
+      <fieldset>
+        <legend>Namn</legend>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="Förnamn"
+        />
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Efternamn"
+        /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Information</legend>
+        <input
+          type="tel"
+          name="telephone"
+          id="telephone"
+          placeholder="Telefonnummer"
+        /><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-Mailadress"
+        /><br />
+        <label for="allergi">Allergier:</label><br />
+        <select multiple name="allergi" id="allergi">
+          <option value="mjolk">Mjölk</option>
+          <option value="agg">Ägg</option>
+          <option value="not">Nöt</option>
+        </select>
+        <br />
+        <label for="vip_package">Vill du ha VIP-paketet?</label><br />
+        <input type="checkbox" name="vip_package" id="vip_package" /><br />
+        <label for="lottery">Välj ett lottnummer mellan 1-100</label><br />
+        <input
+          type="number"
+          id="lottery"
+          name="lottery"
+          min="1"
+          max="100"
+        /><br />
+      </fieldset>
+      <label for="other">Övrig information</label><br />
+      <textarea name="other" id="other" rows="10" cols="40"></textarea><br />
+      <input type="submit" value="Skicka in" />
+    </form>
+    <video width="320" height="240" controls>
+      <source src="sample.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <canvas id="mycanvas" width="400" height="400">En jättefin canvas </canvas>
+  </body>
+</html>
