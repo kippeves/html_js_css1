@@ -33,7 +33,7 @@
       <li>4</li>
       <li>5</li>
     </ol>
-    <img src="/img/20220122_150357_1.jpg" alt="" />
+    <img src="img/20220122_150357_1.jpg" alt="" />
     <br />
     <a href="http://www.google.com">Gå till Google</a><br>
     <a href="Http://www.google.com" target="_blank">Gå till Google</a>(Öppnas i ny flik)
@@ -60,6 +60,12 @@
       <li>Filmer</li>
       <li>Böcker</li>
     </ul>
+<!--
+Jag vet att du använde <div> i dina exempel för att dela upp formuläret
+men jag tänkte att Fieldset är mer semantiskt korrekt då jag vill dela
+upp fälten.
+  -->
+
     <form method="post"  action="https://formshow.systementor.se">
       <fieldset>
         <legend>Namn</legend>
@@ -99,7 +105,7 @@
         <br />
         <label for="vip_package">Vill du ha VIP-paketet?</label><br />
         <input type="checkbox" name="vip_package" id="vip_package" /><br />
-        <label for="lottery">Välj ett lottnummer mellan 1-100</label><br />
+        <label for="lottery">Skriv ett lottnummer mellan 1-100</label><br />
         <input
           type="number"
           id="lottery"
@@ -108,14 +114,27 @@
           max="100"
         /><br />
       </fieldset>
-      <label for="other">Övrig information</label><br />
-      <textarea name="other" id="other" rows="10" cols="40"></textarea><br />
+      <fieldset>
+        <legend>Övrig information:</legend>
+      <textarea name="other" id="other" rows="10" cols="40"></textarea>
+    </fieldset>
       <input type="submit" value="Skicka in" />
     </form>
+    <div class="imagedivider">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="img/big.png">
+        <source media="(min-width: 600px)" srcset="img/small.png">
+        <img alt="Ett landskap" src="img/small.jpg" style="width:auto;">
+      </picture>
+    </div>
+    <div class="videocontent">
     <video width="320" height="240" controls>
       <source src="https://aspcodeprod.blob.core.windows.net/school-dev/Sample-MP4-Video-File-for-Testing.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video>
+    </div>
+  <div class="canvascontent">
     <canvas id="mycanvas" width="400" height="400">En jättefin canvas </canvas>
+    </div>
   </body>
 </html>
